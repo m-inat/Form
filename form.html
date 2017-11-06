@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>アンケートフォーム</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="en"><a href="#">Ferica Technical Academy</a></h1>
+    <nav class="pc_nav">
+      <ul>
+        <li>
+          <a href="#">受講生の作品</a>
+          <a href="#">卒業生の声</a>
+          <a href="#">カリキュラム概要</a>
+          <a href="#">募集要項</a>
+          <a href="#">申し込み方法</a>
+          <a href="#">施設見学会のご予約</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="ham_menu">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+    <!-- /.ham_menu -->
+    <nav class="mobile_nav">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">受講生の作品</a></li>
+        <li><a href="#">卒業生の声</a></li>
+        <li><a href="#">カリキュラム概要</a></li>
+        <li><a href="#">募集要項</a></li>
+        <li><a href="#">申し込み方法</a></li>
+        <li><a href="#">施設見学会のご予約</a></li>
+      </ul>
+    </nav>
+    <!-- /.mobile_nav -->
+  </header>
+  <main>
+    <div class="caption_pc">
+      <div class="caption1">
+        <h2>この度は施設見学会へご参加いただき
+        <br>誠にありがとうございます。
+      </h2>
+        <p>施設見学会へご参加いただいた方へ
+          <br>今後の参考のためにアンケートを実施しております。
+          <br>任意のアンケートとなっておりますが、
+          <br>ご協力いただけると幸いです。
+        </p>
+      </div>
+      <!-- /.caption1 -->
+    </div>
+    <!-- /.caption_pc -->
+    <div class="form">
+      <form name="form" action="mail.php" method="post">
+        <div class="form1">
+          <h2>施設見学会アンケート</h2>
+          <div class="field_wrap field1">
+            <label class="en">
+            name<span class="req">*</span>
+          </label>
+            <input type="text" name="name" id="name" autocomplete="off" required>
+          </div>
+          <!-- /.field_wrap -->
+          <div class="field_wrap field2">
+            <label class="en">
+            e-mail<span class="req">*</span>
+          </label>
+            <input type="email" name="email" id="email" autocomplete="off" required>
+          </div>
+          <!-- /.field_wrap -->
+          <div class="age">
+            <label>
+            <input type="radio" name="age" class="radio1 ripple" value="10代" checked>
+            <span class="radio_parts">10代</span>
+          </label>
+            <label>
+            <input type="radio" name="age" class="radio2" value="20代">
+            <span class="radio_parts">20代</span>
+          </label>
+            <label>
+            <input type="radio" name="age" class="radio3" value="30代">
+            <span class="radio_parts">30代</span>
+          </label>
+            <label>
+            <input type="radio" name="age" class="radio4" value="40代">
+            <span class="radio_parts">40代以上</span>
+          </label>
+          </div>
+          <!-- /.age -->
+          <div class="sex">
+            <label>
+            <input type="radio" name="sex" class="radio2_1" value="男性" checked>
+            <span class="radio_parts">男性</span>
+          </label>
+            <label>
+            <input type="radio" name="sex" class="radio2_2" value="女性">
+            <span class="radio_parts">女性</span>
+          </label>
+          </div>
+          <!-- /.sex -->
+          <div id="button1">
+            <input type="button" class="button ripple" id="next" value="次へ" disabled>
+          </div>
+          <!-- /.button -->
+          <div class="caption_mobile">
+            <p>アンケートへのご協力をお願い致します。</p>
+          </div>
+          <!-- /.caption_mobile -->
+        </div>
+        <!-- /.form1 -->
+        <div class="form2">
+          <h2>施設見学会アンケート</h2>
+          <div class="interest">
+            <p>関心のある項目にチェックを入れてください。
+              <br>（複数回答可）<span class="req">*</span></p>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="HTML5">
+          <span class="checkbox_parts en">HTML5</span>
+        </label>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="CSS3">
+          <span class="checkbox_parts en">CSS3</span>
+        </label>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="JavaScript">
+          <span class="checkbox_parts en">JavaScript</span>
+        </label>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="PHP">
+          <span class="checkbox_parts en">PHP</span>
+        </label>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="Photoshop">
+          <span class="checkbox_parts en">Photoshop</span>
+        </label>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="Illustrator">
+          <span class="checkbox_parts en">Illustrator</span>
+        </label>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="SEO">
+          <span class="checkbox_parts en">SEO</span>
+        </label>
+            <label>
+          <input type="checkbox" name="interest[]" class="checkbox" value="Other">
+          <span class="checkbox_parts en">Other</span>
+        </label>
+          </div>
+          <!-- /.hobby -->
+          <div class="question">
+            <div class="filed_wrap">
+              <label id="question">その他ご質問・ご感想など</label>
+              <textarea name="question" id="question_area" rows="8"></textarea>
+            </div>
+            <!-- /.filed_wrap -->
+          </div>
+          <!-- /.question -->
+          <div id="button2">
+            <input type="button" class="button on" id="return" value="戻る">
+            <input type="submit" class="button" id="submit" value="送信" disabled>
+          </div>
+          <!-- /.button2 -->
+        </div>
+        <!-- /.form2 -->
+      </form>
+    </div>
+    <!-- /.form -->
+  </main>
+  <div class="layer"></div>
+  <!-- /.layer -->
+  <div class="layer1"></div>
+  <!-- /.layer1 -->
+  <script src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
